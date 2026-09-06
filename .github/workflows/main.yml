@@ -1,1 +1,22 @@
 
+name: Welcome new contributors
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  welcome-bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: first interaction greeting
+        uses: actions/first-interactions@v1
+
+        with:
+          # This token lets the tool speak on behalf of your account safely
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-comment: "Hi there! 👋 Thank you so much for opening your very first issue on this playground project. I am an automated bot learning GitHub Actions!"
+          
