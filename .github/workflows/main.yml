@@ -17,5 +17,5 @@ jobs:
         with:
           # This token lets the tool speak on behalf of your account safely
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          issue-comment: "Hi there! 👋 Thank you so much for opening your very first issue on this playground project. I am an automated bot learning GitHub Actions!"
+          issue-message: "Hi there! 👋 Thank you so much for opening your very first issue on this playground project. I am an automated bot learning GitHub Actions!"
           
